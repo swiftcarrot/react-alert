@@ -1,40 +1,17 @@
-# react-native-alert
+# react-alert
 
-React native alert component for both iOS and Android
+Alert for React and React Native
 
 ### Installation
 
 ```sh
-yarn add @swiftcarrot/react-native-alert
+yarn add @swiftcarrot/react-alert
 ```
 
 ### Usage
 
 ```javascript
-import {
-  Alert,
-  showAlert,
-  hideAlert,
-  useAlert
-} from '@swiftcarrot/react-native-alert';
-
-const App = () => {
-  return (
-    <Alert.Provider>
-      <Alert />
-    </Alert.Provider>
-  );
-};
-
-const Screen = () => {
-  const { showAlert, hideAlert } = useAlert();
-
-  return <View></View>;
-};
-```
-
-```javascript
-import { showAlert, hideAlert } from '@swiftcarrot/react-native-alert';
+import { showAlert, hideAlert } from '@swiftcarrot/react-alert';
 
 showAlert({
   title: 'title',
@@ -51,6 +28,8 @@ showAlert({
   ]
 });
 ```
+
+### Styling
 
 ### License
 
